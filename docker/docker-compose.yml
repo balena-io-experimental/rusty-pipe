@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  rusty-pipe:
+    image: rusty-pipe:dev
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    network_mode: host
+    command: rusty-pipe -c 10.107.1.1/29 -s testnet

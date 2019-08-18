@@ -1,0 +1,13 @@
+[package]
+name = "rusty-pipe"
+version = "0.1.0"
+authors = ["richardb"]
+edition = "2018"
+
+[dependencies]
+base64 = "0.10.1"
+clap = "2.33.0"
+crossbeam-channel = "0.3"
+mac_address = "1.0.0"
+rumqtt = "0.30.1"
+tun-tap-mac = "0.1.2"
